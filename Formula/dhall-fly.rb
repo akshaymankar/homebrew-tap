@@ -16,6 +16,12 @@ class DhallFly < Formula
     install_cabal_package
   end
 
+  bottle do
+    root_url "https://github.com/akshaymankar/homebrew-tap/releases/download/v1/"
+    cellar :any_skip_relocation
+    sha256 "d9f98733f1cbbdb7a9aa64ef79d9ddc19b28c464abb48ca1dfc3ae6aa789a45d" => :mojave
+  end
+
   test do
     empty_pipeline = '[] : List https://raw.githubusercontent.com/akshaymankar/dhall-concourse/0.2.2/types/Job.dhall'
     assert_match "jobs: []\nresource_types: []\nresources: []\n", pipe_output("#{bin}/dhall-fly", empty_pipeline, 0)
