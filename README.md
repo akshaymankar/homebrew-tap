@@ -1,4 +1,5 @@
-# Akshaymankar Tap
+# Akshay Mankar's Tap 🚰
+Where software flows freely
 
 ## How do I install these formulae?
 `brew install akshaymankar/tap/<formula>`
