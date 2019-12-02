@@ -5,9 +5,9 @@ class DhallFly < Formula
 
   desc 'Translate concourse config from Dhall to YAML'
   homepage 'https://github.com/akshaymankar/dhall-fly'
-  url 'https://hackage.haskell.org/package/dhall-fly-0.2.0/dhall-fly-0.2.0.tar.gz'
+  url 'https://hackage.haskell.org/package/dhall-fly-0.2.1/dhall-fly-0.2.1.tar.gz'
   head 'https://github.com/akshaymankar/dhall-fly'
-  sha256 'adfc5f31b25be7a7a37dd053a0f284b14426e2e2af35567265259beb5924c840'
+  sha256 '0d7c325449d553f59dbc5d20b28485dbd18b967ffe7fc88a4ec3dd7615acd0b7'
 
   depends_on 'ghc@8.6' => :build
   depends_on 'cabal-install' => :build
@@ -19,7 +19,7 @@ class DhallFly < Formula
   bottle do
     root_url "https://dl.bintray.com/axeman/dhall-fly/"
     cellar :any_skip_relocation
-    sha256 "dbc6b67e8784cc6f43aa0119ad8b1dbe6e0459b556b7dea730947499222186dc" => :mojave
+    sha256 "7a04fe8668d58981080119ca3a5c337910c866c0a3612a289c99a45546763a7e" => :mojave
   end
 
   test do
