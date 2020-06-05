@@ -8,12 +8,14 @@ class DhallFly < Formula
   url 'https://hackage.haskell.org/package/dhall-fly-0.3.0/dhall-fly-0.3.0.tar.gz'
   head 'https://github.com/akshaymankar/dhall-fly'
   sha256 '96e285dfea7a48736d8fad323e32fb6d66b1b895a6d96fa85ed071f482152504'
+  revision 1
 
   depends_on 'ghc@8.6' => :build
   depends_on 'cabal-install' => :build
 
   def install
-    install_cabal_package
+    system Formula["cabal-install"].bin/"cabal", "v2-update"
+    system Formula["cabal-install"].bin/"cabal", "v2-install", *std_cabal_v2_args
   end
 
   bottle do
