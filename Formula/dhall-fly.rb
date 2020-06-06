@@ -21,7 +21,7 @@ class DhallFly < Formula
   bottle do
     root_url "https://dl.bintray.com/axeman/dhall-fly/"
     cellar :any_skip_relocation
-    sha256 "6c122e58d61d3e6a2757cbebb55c82f3c0b839b2d301c688925eafd01d4d22f5" => :mojave
+    sha256 "6f88144344b6e5df55bd2c80a9380fd9c56d930d30cab1ac9f638c13172c5a79" => :mojave
   end
 
   test do
