@@ -1,5 +1,5 @@
 jobs:
-- job: macOS
+- job: build_hie
   pool:
     vmImage: macOS-10.14
   steps:
@@ -11,5 +11,117 @@ jobs:
         mkdir -p "$HOMEBREW_TAP_DIR"
         rm -rf "$HOMEBREW_TAP_DIR"
         ln -s "$PWD" "$HOMEBREW_TAP_DIR"
-        brew test-bot
-      displayName: Run brew test-bot
+        brew install --build-bottle -v hie
+      displayName: Build hie bottle
+- job: build_hie842
+  pool:
+    vmImage: macOS-10.14
+  steps:
+    - bash: |
+        set -e
+        sudo xcode-select --switch /Applications/Xcode_10.2.app/Contents/Developer
+        brew update
+        HOMEBREW_TAP_DIR="/usr/local/Homebrew/Library/Taps/akshaymankar/homebrew-tap"
+        mkdir -p "$HOMEBREW_TAP_DIR"
+        rm -rf "$HOMEBREW_TAP_DIR"
+        ln -s "$PWD" "$HOMEBREW_TAP_DIR"
+        brew install --build-bottle -v hie842
+      displayName: Build hie842 bottle
+- job: build_hie843
+  pool:
+    vmImage: macOS-10.14
+  steps:
+    - bash: |
+        set -e
+        sudo xcode-select --switch /Applications/Xcode_10.2.app/Contents/Developer
+        brew update
+        HOMEBREW_TAP_DIR="/usr/local/Homebrew/Library/Taps/akshaymankar/homebrew-tap"
+        mkdir -p "$HOMEBREW_TAP_DIR"
+        rm -rf "$HOMEBREW_TAP_DIR"
+        ln -s "$PWD" "$HOMEBREW_TAP_DIR"
+        brew install --build-bottle -v hie843
+      displayName: Build hie843 bottle
+- job: build_hie844
+  pool:
+    vmImage: macOS-10.14
+  steps:
+    - bash: |
+        set -e
+        sudo xcode-select --switch /Applications/Xcode_10.2.app/Contents/Developer
+        brew update
+        HOMEBREW_TAP_DIR="/usr/local/Homebrew/Library/Taps/akshaymankar/homebrew-tap"
+        mkdir -p "$HOMEBREW_TAP_DIR"
+        rm -rf "$HOMEBREW_TAP_DIR"
+        ln -s "$PWD" "$HOMEBREW_TAP_DIR"
+        brew install --build-bottle -v hie844
+      displayName: Build hie844 bottle
+- job: build_hie861
+  pool:
+    vmImage: macOS-10.14
+  steps:
+    - bash: |
+        set -e
+        sudo xcode-select --switch /Applications/Xcode_10.2.app/Contents/Developer
+        brew update
+        HOMEBREW_TAP_DIR="/usr/local/Homebrew/Library/Taps/akshaymankar/homebrew-tap"
+        mkdir -p "$HOMEBREW_TAP_DIR"
+        rm -rf "$HOMEBREW_TAP_DIR"
+        ln -s "$PWD" "$HOMEBREW_TAP_DIR"
+        brew install --build-bottle -v hie861
+      displayName: Build hie861 bottle
+- job: build_hie862
+  pool:
+    vmImage: macOS-10.14
+  steps:
+    - bash: |
+        set -e
+        sudo xcode-select --switch /Applications/Xcode_10.2.app/Contents/Developer
+        brew update
+        HOMEBREW_TAP_DIR="/usr/local/Homebrew/Library/Taps/akshaymankar/homebrew-tap"
+        mkdir -p "$HOMEBREW_TAP_DIR"
+        rm -rf "$HOMEBREW_TAP_DIR"
+        ln -s "$PWD" "$HOMEBREW_TAP_DIR"
+        brew install --build-bottle -v hie862
+      displayName: Build hie862 bottle
+- job: build_hie863
+  pool:
+    vmImage: macOS-10.14
+  steps:
+    - bash: |
+        set -e
+        sudo xcode-select --switch /Applications/Xcode_10.2.app/Contents/Developer
+        brew update
+        HOMEBREW_TAP_DIR="/usr/local/Homebrew/Library/Taps/akshaymankar/homebrew-tap"
+        mkdir -p "$HOMEBREW_TAP_DIR"
+        rm -rf "$HOMEBREW_TAP_DIR"
+        ln -s "$PWD" "$HOMEBREW_TAP_DIR"
+        brew install --build-bottle -v hie863
+      displayName: Build hie863 bottle
+- job: build_hie864
+  pool:
+    vmImage: macOS-10.14
+  steps:
+    - bash: |
+        set -e
+        sudo xcode-select --switch /Applications/Xcode_10.2.app/Contents/Developer
+        brew update
+        HOMEBREW_TAP_DIR="/usr/local/Homebrew/Library/Taps/akshaymankar/homebrew-tap"
+        mkdir -p "$HOMEBREW_TAP_DIR"
+        rm -rf "$HOMEBREW_TAP_DIR"
+        ln -s "$PWD" "$HOMEBREW_TAP_DIR"
+        brew install --build-bottle -v hie864
+      displayName: Build hie864 bottle
+- job: build_hie865
+  pool:
+    vmImage: macOS-10.14
+  steps:
+    - bash: |
+        set -e
+        sudo xcode-select --switch /Applications/Xcode_10.2.app/Contents/Developer
+        brew update
+        HOMEBREW_TAP_DIR="/usr/local/Homebrew/Library/Taps/akshaymankar/homebrew-tap"
+        mkdir -p "$HOMEBREW_TAP_DIR"
+        rm -rf "$HOMEBREW_TAP_DIR"
+        ln -s "$PWD" "$HOMEBREW_TAP_DIR"
+        brew install --build-bottle -v hie865
+      displayName: Build hie865 bottle
