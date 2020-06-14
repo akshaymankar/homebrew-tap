@@ -25,7 +25,7 @@ class DhallFly < Formula
   end
 
   test do
-    empty_pipeline = "[] : List https://raw.githubusercontent.com/akshaymankar/dhall-concourse/0.5.0/types/Job.dhall"
+    empty_pipeline = "[] : List https://raw.githubusercontent.com/akshaymankar/dhall-concourse/0.8.0/types/Job.dhall"
     assert_match "jobs: []\nresource_types: []\nresources: []\n", pipe_output("#{bin}/dhall-fly", empty_pipeline, 0)
   end
 end
